@@ -1,0 +1,18 @@
+[
+  {
+    "hero": {
+      "image": "../images/content/dream_vacation/background.jpeg",
+      "slide1": {
+        "image": "https://www.europahotelbelfast.com/wp-content/uploads/2021/12/Shannon-Suite-5.jpg",
+        "roomType":"Standart Room",
+        "price":"$150"
+    },
+      "slide2": {
+        "image": "https://media.cntraveler.com/photos/53da5aa96dec627b149e509d/master/w_1024,h_768,c_limit/royal-ethiad-suite-jumeirah-abu-dhabi-2.jpg",
+        "roomType":"Business",
+        "price":"$350"
+      }
+    
+    }
+  }
+]

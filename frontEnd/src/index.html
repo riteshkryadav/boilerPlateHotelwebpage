@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg container-fluid navbar-light px-4 d-flex"
+    >
+      <div class="container-fluid row d-flex justify-content-between">
+        <h2 class="navbar-brand overflow-visible col-2">
+          MIKALTO <br />
+          <p class="brand-title overflow-visible">HOTEL & RESORTS</p>
+        </h2>
+        <button
+          class="navbar-toggler col-2 offset-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse col-1 col-md-5 offset-1"
+          id="navbarText"
+        >
+          <ul
+            class="nav-list d-flex overflow-hidden list-unstyled navbar-nav me-auto mb-2 mb-lg-0 justify-content-around gap-1"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Our Rooms</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Features</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Contact</a
+              >
+            </li>
+            <div class="shopIcon">
+              <select name="" class="border-0" id="">
+                <option value="">EN</option>
+                <option value="">HN</option>
+                <option value="">SN</option>
+                <option value="">JP</option>
+                <option value="">TM</option>
+              </select>
+              <img
+                class="nav-shopping-bag"
+                src="./images/content/nav_bar/shopping-bag.svg"
+                alt="shhoping_bag"
+              />
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Dream Vacation -->
+
+    <section
+      class="container-fluid py-md-3 justify-content-md-start justify-content-center"
+      id="landing_page"
+    >
+      <div class="row d-flex align-items-center">
+        <div class="col-12 col-md-6">
+          <div class="vacation_text">
+            <h1>
+              Enjoy Your <br />
+              Dream Vacation
+            </h1>
+            <p class="p-2">Quite and endlessly beautiful hideway</p>
+          </div>
+          <div class="d-flex py-2">
+            <button class="about_us col-sm-4 col-6 rounded-1 bg-light">
+              About Us
+            </button>
+            <a class="about_us col-sm-4 col-6 text-decoration-none text-dark">
+              View HomeStay →
+            </a>
+          </div>
+        </div>
+        <div class="col-md-5 col-12 px-4 py-4 bg-light">
+          <form
+            class="offset-sm-1 col-10"
+            action=""
+            onsubmit="handleForm(event)"
+          >
+            <h2>Search Room</h2>
+            <p>Get the latest on our COVID-19 response</p>
+            <div class="check_in_out justify-content-between py-5">
+              <p class="">
+                <span class="checkIn d-flex"
+                  ><img
+                    src="./images/content/dream_vacation/calendar.svg"
+                    alt="calander"
+                  />
+                  Checkin <span class="text-danger">*</span>
+                </span>
+                <input class="check_date" type="date" name="" id="checkIn" />
+              </p>
+              <p class="">
+                <span class="checkIn d-flex"
+                  ><img
+                    src="./images/content/dream_vacation/calendar.svg"
+                    alt="calender"
+                  />
+                  Checkout<span class="text-danger">*</span></span
+                >
+                <input class="check_date" type="date" name="" id="checkOut" />
+              </p>
+            </div>
+            <div class="adult-person py-3">
+              <p class="d-flex m-0">
+                <img
+                  class="me-3"
+                  src="./images/content/dream_vacation/person_icon.svg"
+                  alt="adult"
+                />Adults
+              </p>
+              <select
+                name=""
+                class="search_room_dropdown w-100 bg-transparent"
+                id="adult"
+              >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="child py-3">
+              <p class="d-flex m-0">
+                <img
+                  class="me-3"
+                  src="./images/content/dream_vacation/children_icon.svg"
+                  alt="children"
+                />Children
+              </p>
+              <select
+                name=""
+                class="search_room_dropdown w-100 bg-transparent"
+                id="children"
+              >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+
+            <div class="checkAvailability py-3">
+              <button class="bg-primary btn w-100">Check availability</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Mikalto Luxury -->
+
+    <section class="container py-3">
+      <div class="row d-flex align-items-center">
+        <div class="col-12 col-md-6 px-5">
+          <div class="text-primary">WELCOME TO</div>
+          <div class="">
+            <h2>
+              The Mikalto Luxury & <br />
+              Comfort Homestay
+            </h2>
+          </div>
+
+          <div class="fs-5 text-secondary">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel dolor
+            alias praesentium? Optio est vel hic rem ducimus? Praesentium, quod!
+          </div>
+
+          <div class="text-secondary">
+            <img
+              class="w-50"
+              src="./images/content/the_luxury/muhammad-ali-signature-6a40cd5a6c27559411db066f62d64886c42bbeb03b347237ffae98b0b15e0005.svg"
+              alt="signature"
+            />
+            <br />MELINDA AMANDA - HOTEL MANAGER
+          </div>
+        </div>
+
+        <div
+          class="offset-md-0 col-9 col-md-6 position-relative luxuryContainer"
+        >
+          <img
+            class="the_luxury_image chef_img"
+            src="./images/content/the_luxury/chef.jpeg"
+            alt="chef"
+          />
+          <img
+            class="the_luxury_image outdoor_view"
+            src="./images/content/the_luxury/hoteloutdoor.avif"
+            alt="outdoor"
+          />
+          <img
+            class="the_luxury_image indoor_view chef"
+            src="./images/content/the_luxury/hotel_indoor.jpeg"
+            alt="indoor"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Slider -->
+
+    <section class="container-fluid room_discription carousel-height">
+      <div
+        class="row d-flex align-items-center justify-content-center px-0 text-light h-100"
+      >
+        <div class="col-10 col-md-4 offset-sm-1">
+          <div class="" id="k">
+            <span>ELANGNCE AND COMFORT</span>
+            <h2 id="roomType">Standart Room</h2>
+          </div>
+          <div class="py-2">
+            From:<b id="price">$150</b> / night <br />
+            Lorem ipsum, dolor sit amet consectetur adipisicing....
+          </div>
+          <table class="">
+            <t>
+              <td class="py-2"><b>Bed:</b></td>
+              <td class="py-2">Queen Size Bed</td>
+            </t>
+            <tr>
+              <td class="py-2"><b>Capacity:</b></td>
+              <td class="py-2">2 adult, 1 children</td>
+            </tr>
+            <tr>
+              <td class="py-2"><b>Room Size:</b></td>
+              <td class="py-2 ms-4">55 sqm</td>
+            </tr>
+            <tr>
+              <td class="py-2"><b>View:</b></td>
+              <td class="py-2">garden view</td>
+            </tr>
+          </table>
+
+          <div>
+            <a
+              class="bg-transparent text-decoration-none text-light py-3 btn my-5"
+            >
+              View Details
+            </a>
+          </div>
+        </div>
+        <div class="container-lg col-10 col-md-7 my-3 h-100">
+          <div class="swiper mySwiper h-100 align-items-center  d-flex">
+            <div class="swiper-wrapper h-75">
+              <div class="swiper-slide h-100" id="carousel1" value="c1">
+                <img
+                  class="imgCarousel img-fluid h-100"
+                  id="one"
+                  src=""
+                  alt="bedroom"
+                />
+              </div>
+              <div class="swiper-slide " id="carousel2" value="c2">
+                <img
+                  class="imgCarousel img-fluid  w-100 h-100"
+                  id="two"
+                  src=""
+                  alt="bedroom2"
+                />
+              </div>
+
+            </div>
+            <div class="swiper-button-next" id="next"></div>
+            <div class="swiper-button-prev" id="prev"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Choose Our Hotel -->
+
+    <section class="container py-5">
+      <div class="row d-flex justify-content-center">
+        <div class="heading_choose col-9 offset-sm-1">
+          <h2>Why choose our hotel</h2>
+        </div>
+        <div class="col-12 py-3 col-md-4 col-lg-3 d-flex">
+          <div class="py-2 pe-4">
+            <img src="./images/content/choose/cuisine_logo.svg" alt="cuisin" />
+          </div>
+          <div class="text-secondary">
+            <span class="text-dark fs-5"
+              ><b>Unique cuisine <br /> </b
+            ></span>
+            We use the best ingredients to make special and really tasty dishes.
+            Choose what you want to eat every day. You order at the moment.
+          </div>
+        </div>
+        <div class="col-12 py-3 col-md-4 col-lg-3 d-flex">
+          <div class="py-2 pe-4">
+            <img src="./images/content/choose/yoga&gym_logo.svg" alt="yoga" />
+          </div>
+          <div class="text-secondary">
+            <span class="text-dark fs-5"
+              ><b>Yoga & Gym <br /> </b
+            ></span>
+            We use the best ingredients to make special and really tasty dishes.
+            Choose what you want to eat every day. You order at the moment.
+          </div>
+        </div>
+        <div class="col-12 py-3 col-md-4 col-lg-3 d-flex">
+          <div class="py-2 pe-4">
+            <img src="./images/content/choose/location_logo.svg" alt="location" />
+          </div>
+          <div class="text-secondary">
+            <span class="text-dark fs-5"
+              ><b>Perfect Location <br /> </b
+            ></span>
+            We use the best ingredients to make special and really tasty dishes.
+            Choose what you want to eat every day. You order at the moment.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- other Activities -->
+
+    <section class="container-fluid container_6">
+      <div class="row d-flex align-items-center">
+        <div class="col-12 p-4 col-md-6 text-light">
+          <div class="activities py-2 text-warning">OTHER ACTIVITIES</div>
+          <div class="py-2">
+            <h2>Give yourself a smile- Smile & Wellness</h2>
+          </div>
+          <div class="py-2">
+            Proin nec leo vel metus faucibus vehicula. Donec vulputate in magna
+            eget egestas. Aliquam ac facilisis ante, sit amet tincidunt ante.
+            Fusce dolor sapien, sodales at velit non, lobortis volutpat ante.
+            Integer porta molestie volutpat. Etiam tristique, sem vitae
+            tincidunt gravida, eros nulla dapibus lacus, ut dapibus diam dui vel
+            tortor.
+          </div>
+          <div class="py-2">
+            <button class="btn text-light">Explore More →</button>
+          </div>
+        </div>
+
+        <div class="col-12 py-2 col-md-6">
+          <img
+            class="activites_img"
+            src="./images/content/other_activities/sweeming_pool.jpg"
+            alt="sweeming"
+          />
+        </div>
+
+        <div class="py-2 col-md-6">
+          <img
+            class="activites_img w-100"
+            src="./images/content/other_activities/hotel_outer_view.webp"
+            alt="outdoor"
+          />
+        </div>
+
+        <div class="col-12 col-md-6 p-4 text-light align-items-center">
+          <div class="activities text-warning">RECONNECT WITH NATURE</div>
+          <div class="">
+            <h2>Experience a truly unforgettable holiday</h2>
+          </div>
+          <div class="py-2">
+            The wilderness and authenticity of this tiny village nestled between
+            steep mountain cliffs and miles and miles of beautiful beaches drew
+            foreign visitors like a magnet.
+            <ul class="py-2">
+              <li>Thermal water with ancient baths</li>
+              <li>Turkish bath</li>
+              <li>Turkish sauna</li>
+              <li>Relax and therapy massage</li>
+            </ul>
+          </div>
+          <div>
+            <button class="bg-transparent border-1 btn text-light py-2 my-3">
+              Book Your Stay
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE MATTERS -->
+
+    <section class="container">
+      <div class="row d-flex py-3 align-items-center">
+        <div class="col-12 text-center py-2">
+          <p class="text-primary">EXPERIENCE MATTERS</p>
+          <h2>
+            Escape from the World see the experience before you <br />
+            feel it. Discover the luxury of Hotel Mikalto
+          </h2>
+        </div>
+        <div class="col-11 col-md-5 col-lg-3 offset-lg-0 offset-1 p-2">
+          <img
+            class="experience_img"
+            src="./images/content/experience_metters/wellness.jpeg"
+            alt="experience"
+          />
+          <p class="text-secondary">WELNESS</p>
+          <h3>Dedicated to wellness</h3>
+          <p class="text-secondary">
+            Aman's approach to wellness is focused on personalisation, privacy
+            and seclusion. Local spa rituals with indigenous ingredients, offer
+            a profoundly therapeutic touch, and a gentle sense of discovery.
+          </p>
+          <a class="text-decoration-none text-primary" href="#"
+            >Discover more→</a
+          >
+        </div>
+        <div class="col-11 col-md-5 col-lg-3 offset-lg-0 offset-1 p-2">
+          <img
+            class="experience_img"
+            src="./images/content/experience_metters/hotels-with-outdoor-pools-bath-1596640256.jpg"
+            alt="experience"
+          />
+          <p class="text-secondary">GIFT CARD</p>
+          <h3>The gift of future travel</h3>
+          <p class="text-secondary">
+            Share extraordinary experiences with the Aman E- Gift Card -
+            delivered instantly and offering memories that last a lifetime.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+            perferendis.
+          </p>
+          <a class="text-decoration-none text-primary" href="#"
+            >Discover more→</a
+          >
+        </div>
+        <div class="col-11 col-md-5 col-lg-3 offset-lg-0 offset-1 p-2">
+          <img
+            class="experience_img"
+            src="./images/content/experience_metters/mikalro_shop.webp"
+            alt="shop"
+          />
+          <p class="text-secondary">MIKALTO SHOP</p>
+          <h3>The spa experience from home</h3>
+          <p class="text-secondary">
+            Aman's approach to wellness is focused on personalisation, privacy
+            and seclusion. Local profoundly therapeutic touch, and a gentle
+            sense of discovery.
+          </p>
+          <a class="text-decoration-none text-primary" href="#"
+            >Discover more→</a
+          >
+        </div>
+        <div class="col-11 col-md-5 col-lg-3 offset-lg-0 offset-1 p-2">
+          <img
+            class="experience_img"
+            src="./images/content/experience_metters/experience.jpeg"
+            alt="shop"
+          />
+          <p class="text-secondary">EXPERIENCE</p>
+          <h3>Adventure in the wild</h3>
+          <p class="text-secondary">
+            Aman's approach to wellness is focused on personalisation, privacy
+            and seclusion. Local spa rituals with indigenous ingredients, offer
+            a profoundly therapeutic touch, and a gentle sense.
+          </p>
+          <a class="text-decoration-none text-primary" href="#"
+            >Discover more→</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Say Hello -->
+
+    <section class="say_hello container py-5">
+      <div
+        class="col-10 offset-1 col-md-5 offset-md-5 col-lg-3 offset-lg-7 p-5 bg-light"
+      >
+        <h2>Say Hello to whole new You</h2>
+        <p>
+          Proin nec leo vel metus faucibus vehicula. Donec vulputate in magna
+          eget egestas. Aliquam ac facilisis ante, sit amet tincidunt ante.
+          Fusce dolor sapien.
+        </p>
+        <a class="text-decoration-none text-primary" href="#">Discover more→</a>
+      </div>
+    </section>
+
+    <!-- Wonderful -->
+
+    <section class="container wonderful mt-3 py-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 py-3 col-md-4 col-lg-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <img
+              class="rounded-circle wonderful_profile_pic px-2"
+              src="./images/content/wonderful/profile_pic.jpeg"
+              alt="profile_pic"
+            />
+            <p class="text-secondary">
+              <b class="text-dark">Easter Howard<br /></b>21-01-10
+            </p>
+            <img
+              class="wonderful_profile_icon"
+              src="./images/content/wonderful/icon.svg"
+              alt="icon"
+            />
+          </div>
+          <div class="">
+            <img
+              class="wonderful_profile_dot"
+              src="./images/content/wonderful/dot_icon.svg"
+              alt="dot_icon"
+            />
+          </div>
+          <span class="text-dark fs-5"
+            ><b>Wonderful new year trip <br /> </b
+          ></span>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque porro
+          ad nemo perspiciatis nulla rerum! Repudiandae consequuntur
+          voluptatibus est minus, aliquam quia harum animi culpa.
+        </div>
+        <div class="col-12 py-3 col-md-4 col-lg-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <img
+              class="rounded-circle wonderful_profile_pic px-2"
+              src="./images/content/wonderful/profile_pic_2.png"
+              alt="profile_pic"
+            />
+            <p class="text-secondary">
+              <b class="text-dark">Selena Myer<br /></b>21-01-10
+            </p>
+            <img
+              class="wonderful_profile_icon"
+              src="./images/content/wonderful/icon.svg"
+              alt="icon"
+            />
+          </div>
+          <div class="">
+            <img
+              class="wonderful_profile_dot"
+              src="./images/content/wonderful/dot_icon.svg"
+              alt="dot_icon"
+            />
+          </div>
+          <span class="text-dark fs-5"
+            ><b>Recommended <br /> </b
+          ></span>
+          ipsum dolor, sit amet consectetur adipisicing elit. Cumque porro ad
+          nemo perspiciatis nulla rerum! Repudiandae consequuntur voluptatibus
+          est minus, aliquam quia harum animi culpa.
+        </div>
+        <div class="col-12 py-3 col-md-4 col-lg-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <img
+              class="rounded-circle wonderful_profile_pic px-2"
+              src="./images/content/wonderful/profile_pic_3.jpeg"
+              alt="profile_pic"
+            />
+            <p class="text-secondary">
+              <b class="text-dark">Jane Cooper<br /></b>21-01-10
+            </p>
+            <img
+              class="wonderful_profile_icon"
+              src="./images/content/wonderful/icon.svg"
+              alt="icon"
+            />
+          </div>
+          <div class="">
+            <img
+              class="wonderful_profile_dot"
+              src="./images/content/wonderful/dot_icon.svg"
+              alt="dot_icon"
+            />
+          </div>
+          <span class="text-dark fs-5"
+            ><b>All good <br /> </b
+          ></span>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque porro
+          ad nemo perspiciatis nulla rerum! Repudiandae consequuntur
+          voluptatibus est minus, aliquam quia harum animi culpa.
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+
+    <section class="container-fluid py-5">
+      <div class="row d-flex align-items-center">
+        <div class="col-11 col-md-4 offset-1">
+          <div class="">
+            <img src="./images/content/map_section/flower.svg" alt="flower" />
+            <p class="text-primary">GETTING HERE</p>
+            <h2>How to get there?</h2>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+              dolorem praesentium aliquam provident omnis, laudantium deleniti
+              sint iure placeat .
+            </p>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <div class="px-2">
+              <img src="./images/content/map_section/plane-svgrepo-com.svg" alt="plane" />
+            </div>
+            <div class="px-2">
+              <p><b> By plane</b></p>
+              <span class="text-secondary p-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur explicabo nisi soluta ullam illo placeat?</span
+              >
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="px-2">
+              <img src="./images/content/map_section/bus-svgrepo-com.svg" alt="bus" />
+            </div>
+            <div class="">
+              <p><b> By bus</b></p>
+              <span class="text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur explicabo nisi soluta ullam illo placeat?</span
+              >
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="px-2">
+              <img src="./images/content/map_section/car-svgrepo-com (1).svg" alt="car" />
+            </div>
+            <div class="">
+              <p><b> By van</b></p>
+              <span class="text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur explicabo nisi soluta ullam illo placeat?</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="map_section_map col-11 col-md-6 offset-1 py-5">
+          <iframe
+            class="rounded-3"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.043901925615!2d88.42922191494593!3d22.57746128518026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275a5466e0099%3A0x563fb49fb6394261!2sItobuz%20Technologies%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1679915271728!5m2!1sen!2sin"
+            width="90%"
+            height="700"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- WELLNESS -->
+
+    <section class="container-fluid wellness">
+      <div class="row d-flex align-items-center">
+        <div
+          class="col-12 col-md-7 d-flex justify-content-md-start justify-content-center"
+        >
+          <div class="ram wellness_bridge col-8">
+            <img src="./images/content/wellness/bridge.jpeg" alt="bridge" />
+          </div>
+          <div class="wellness_img col-4">
+            <img src="./images/content/wellness/home_jungle.jpeg" alt="jungle" /><img
+              src="./images/content/wellness/girl-jungle.jpeg"
+              alt="homejungle"
+            />
+          </div>
+        </div>
+
+        <div
+          class="col-12 offset-0 col-md-5 p-3 text-center align-items-center"
+        >
+          <p>SPA & WELLNESS</p>
+          <h2>Side by Side with Nature</h2>
+          <p class="text-secondary">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+            ducimus eos, facilis vitae a dolor deserunt possimus maxime
+            perspiciatis fugiat, porro ex officia nulla.
+          </p>
+          <p><button class="btn btn-primary">Join Us</button></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Email Input -->
+
+    <section
+      class="subscribe-container text-center d-flex justify-content-center"
+    >
+      <ul class="col-8 container pt-5 rounded-3">
+        <p>STORIES DEVLOPED STRAIGHT</p>
+        <p class="fs-1">Get News & Update to Your Inbox</p>
+
+        <div
+          class="row d-flex border-1 border-danger justify-content-center pb-5"
+        >
+          <input
+            id="email"
+            type="email"
+            class="email p-1 text-secondary bg-transparent col-12 col-md-8 offset-sm-0"
+            placeholder="Your email address..."
+          />
+          <button
+            id="check"
+            class="subscribe p-1 p-md-3 border-start-0 bg-primary col-6 col-md-2 offset-sm-0"
+          >
+            Subscribe
+          </button>
+          <div id="output"></div>
+        </div>
+        <p class="text-secondary">
+          Will be used in ccordance with our
+          <a class="text-secondary" href="#">Privacy Policy</a>
+        </p>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <img
+        class="footer_bg_img"
+        src="./images/content/footer/Blue-Pattern-Background-For-Free-Download.jpg"
+        alt="footer_bg"
+      />
+    
+
+    <div
+      class=" container-fluid align-self-center text-center text-md-start text-light"
+    >
+      <div class="row d-flex justify-content-center footer-content">
+        <div class="footer-first col-10   col-md-2 pt-5">
+          <div class="py-2">
+            <h3>MIKALTO</h3>
+            <p>Hotel & Resorts</p>
+          </div>
+          <div class="py-1">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+              quibusdam eligendi ea culpa molestias molestiae esse reprehenderit
+              .
+            </p>
+          </div>
+          <div class="d-flex social_media m-auto">
+            <p class="fs-6"><b> Follow Us:</b></p>
+            <a href="https://www.facebook.com" target="_blank"
+              ><img
+                class="footer_social_media"
+                src="./images/content/footer/facebook-svgrepo-com.svg"
+                alt="Facebook"
+            /></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><img
+                class="footer_social_media"
+                src="./images/content/footer/twitter-bird-svgrepo-com.svg"
+                alt="Twitter"
+            /></a>
+            <a href="https://www.instagram.com" target="_blank"
+              ><img
+                class="footer_social_media"
+                src="./images/content/footer/instagram-outline-svgrepo-com.svg"
+                alt="Instagram"
+            /></a>
+            <a href="https://www.youtube.com" target="_blank"
+              ><img
+                class="footer_social_media"
+                src="./images/content/footer/youtube-svgrepo-com.svg"
+                alt="YouTube"
+            /></a>
+            <a href="https://www.pintrest.com" target="_blank"
+              ><img
+                class="footer_social_media"
+                src="./images/content/footer/pinterest-outline-svgrepo-com.svg"
+                alt="pintrest"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer-mid d-flex col-lg-4 col-md-5 p-2 row pt-1 pt-md-5">
+          <div class="col-md-6 col-12 offset-0">
+            <div class="py-1">
+              <h4>About</h4>
+            </div>
+            <div class="py-2">
+              <a class="text-decoration-none text-secondary" href="#"
+                >About Us</a
+              >
+            </div>
+            <div class="py-0 py-md-1">
+              <a class="text-decoration-none text-secondary" href="#"
+                >Careers</a
+              >
+            </div>
+            <div class="py-0 py-md-1">
+              <a class="text-decoration-none text-secondary" href="#"
+                >Contact Us</a
+              >
+            </div>
+            <div class="py-0 py-md-1">
+              <a class="text-decoration-none text-secondary" href="#">Blog</a>
+            </div>
+            <div class="py-0 py-md-1">
+              <a class="text-decoration-none text-secondary" href="#"
+                >Gift Card</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-6 col-12 offset-0 p-2">
+            <div class="py-2">
+              <h4>Services</h4>
+            </div>
+            <div class="py-0 py-md-1">
+              <a class="text-decoration-none text-secondary" href="#">Spa</a>
+            </div>
+            <div class="py-0 py-md-1">
+              <a class="text-decoration-none text-secondary" href="#"
+                >Experience</a
+              >
+            </div>
+            <div class="py-0 py-md-1">
+              <a class="text-decoration-none text-secondary" href="#"
+                >wedding</a
+              >
+            </div>
+            <div class="py-0 py-md-1">
+              <a class="text-decoration-none text-secondary" href="#">Dining</a>
+            </div>
+            <div class="py-0 py-md-1">
+              <a class="text-decoration-none text-secondary" href="#">Event</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-mid d-flex col-md-4 p-2 row pt-5">
+          <div class="col-md-6 col-12 offset-0">
+            <div class="py-2">
+              <h4>Quick Links</h4>
+            </div>
+            <div class="py-0 py-md-1">
+              <a class="text-decoration-none text-secondary" href="#"
+                >Facilities</a
+              >
+            </div>
+            <div class="py-0 py-md-1">
+              <a class="text-decoration-none text-secondary" href="#"
+                >Accomodation</a
+              >
+            </div>
+            <div class="py-0 py-md-1">
+              <a class="text-decoration-none text-secondary" href="#"
+                >Reservation</a
+              >
+            </div>
+            <div class="py-0 py-md-1">
+              <a class="text-decoration-none text-secondary" href="#">Blog</a>
+            </div>
+            <div class="py-0 py-md-1">
+              <a class="text-decoration-none text-secondary" href="#"
+                >Why Choose Us</a
+              >
+            </div>
+            <div class="py-0 py-md-1">
+              <a class="text-decoration-none text-secondary" href="#"
+                >Our Restaurant</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-6 col-12 p-2 align-items-center">
+            <div class="py-2">
+              <h4>Contact Us</h4>
+            </div>
+            <div class="py-0 py-md-1">
+              <a class="text-decoration-none text-secondary" href="#"
+                >Total Free Customer Support</a
+              >
+              <p>(+123)1500-450-9876</p>
+            </div>
+            <div class="py-0 py-md-1">
+              <a class="text-decoration-none text-secondary" href="#"
+                >Need Live support?</a
+              >
+              <p>reservation@mikalto.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="d-flex justify-content-between border-top border-1 border-white mx-5"
+      >
+        <ul class="d-flex gap-3 p-0 list-unstyled">
+          <li>Copyright © 2022 Mikalto JWS.</li>
+          <li class="d-md-inline d-none">Privacy</li>
+          <li class="d-md-inline d-none">Terms</li>
+          <li class="d-md-inline d-none">Sitemap</li>
+        </ul>
+        <div>
+          <a href="#" target="_blank"
+            ><img
+              class="w-25 d-md-inline d-none"
+              src="./images/content/footer/globe-svgrepo-com.svg"
+              alt="globe"
+          /></a>
+          <select name="language" id="language" class="btn text-light avail">
+            <option value="english">EN</option>
+            <option value="french">HN</option>
+            <option value="spanish">SN</option>
+            <option value="russian">JP</option>
+            <option value="german">TM</option>
+          </select>
+        </div>
+      </div>
+    </div></section>
+    <!-- <script src="./script/main.js"></script> -->
+    
+  </body>
+</html>

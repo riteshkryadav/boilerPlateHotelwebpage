@@ -1,0 +1,11 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="64px" height="64px" viewBox="-102.4 -102.4 1228.80 1228.80" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000" stroke-width="51.2">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="4.096"/>
+<g id="SVGRepo_iconCarrier">
+<path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#48ff05"/>
+<path d="M870.4 404.8H619.2c-27.2 0-48 20.8-48 48v116.8c0 27.2 20.8 48 48 48h251.2c27.2 0 48-20.8 48-48v-116.8c0-25.6-20.8-48-48-48zM403.2 404.8H152c-27.2 0-48 20.8-48 48v116.8c0 27.2 20.8 48 48 48h251.2c27.2 0 48-20.8 48-48v-116.8c0-25.6-20.8-48-48-48z" fill="#48ff05"/>
+<path d="M950.4 457.6v-4.8c0-44.8-35.2-80-80-80H619.2c-44.8 0-80 35.2-80 80v4.8h-54.4v-4.8c0-44.8-35.2-80-80-80H152c-44.8 0-80 35.2-80 80v4.8H0v32h72v80c0 44.8 35.2 80 80 80h251.2c44.8 0 80-35.2 80-80v-80h54.4v80c0 44.8 35.2 80 80 80h251.2c44.8 0 80-35.2 80-80v-80H1024v-32h-73.6z m-499.2 112c0 27.2-20.8 48-48 48H152c-27.2 0-48-20.8-48-48v-116.8c0-27.2 20.8-48 48-48h251.2c27.2 0 48 22.4 48 48v116.8z m467.2 0c0 27.2-20.8 48-48 48H619.2c-27.2 0-48-20.8-48-48v-116.8c0-27.2 20.8-48 48-48h251.2c27.2 0 48 22.4 48 48v116.8z" fill=""/>
+</g>
+</svg>
