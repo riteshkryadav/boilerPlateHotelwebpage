@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -125,7 +125,7 @@
           <form
             class="offset-sm-1 col-10"
             action=""
-            onsubmit="handleForm(event)"
+            onsubmit=""
           >
             <h2>Search Room</h2>
             <p>Get the latest on our COVID-19 response</p>
@@ -164,6 +164,7 @@
                 class="search_room_dropdown w-100 bg-transparent"
                 id="adult"
               >
+                <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -193,7 +194,7 @@
             </div>
 
             <div class="checkAvailability py-3">
-              <button class="bg-primary btn w-100">Check availability</button>
+              <button class="bg-primary btn w-100" id="submitDetails">Check availability</button>
             </div>
           </form>
         </div>
@@ -252,7 +253,7 @@
 
     <!-- Slider -->
 
-    <section class="container-fluid room_discription carousel-height">
+    <section class="container-fluid room_discription ">
       <div
         class="row d-flex align-items-center justify-content-center px-0 text-light h-100"
       >
@@ -293,25 +294,24 @@
           </div>
         </div>
         <div class="container-lg col-10 col-md-7 my-3 h-100">
-          <div class="swiper mySwiper h-100 align-items-center  d-flex">
+          <div class="swiper mySwiper h-100 align-items-center d-flex">
             <div class="swiper-wrapper h-75">
               <div class="swiper-slide h-100" id="carousel1" value="c1">
                 <img
-                  class="imgCarousel img-fluid h-100"
+                  class="imgCarousel img-fluid "
                   id="one"
                   src=""
                   alt="bedroom"
                 />
               </div>
-              <div class="swiper-slide " id="carousel2" value="c2">
+              <div class="swiper-slide" id="carousel2" value="c2">
                 <img
-                  class="imgCarousel img-fluid  w-100 h-100"
+                  class="imgCarousel img-fluid w-100 h-100"
                   id="two"
                   src=""
                   alt="bedroom2"
                 />
               </div>
-
             </div>
             <div class="swiper-button-next" id="next"></div>
             <div class="swiper-button-prev" id="prev"></div>
@@ -353,7 +353,10 @@
         </div>
         <div class="col-12 py-3 col-md-4 col-lg-3 d-flex">
           <div class="py-2 pe-4">
-            <img src="./images/content/choose/location_logo.svg" alt="location" />
+            <img
+              src="./images/content/choose/location_logo.svg"
+              alt="location"
+            />
           </div>
           <div class="text-secondary">
             <span class="text-dark fs-5"
@@ -643,7 +646,10 @@
 
           <div class="d-flex align-items-center">
             <div class="px-2">
-              <img src="./images/content/map_section/plane-svgrepo-com.svg" alt="plane" />
+              <img
+                src="./images/content/map_section/plane-svgrepo-com.svg"
+                alt="plane"
+              />
             </div>
             <div class="px-2">
               <p><b> By plane</b></p>
@@ -655,7 +661,10 @@
           </div>
           <div class="d-flex align-items-center">
             <div class="px-2">
-              <img src="./images/content/map_section/bus-svgrepo-com.svg" alt="bus" />
+              <img
+                src="./images/content/map_section/bus-svgrepo-com.svg"
+                alt="bus"
+              />
             </div>
             <div class="">
               <p><b> By bus</b></p>
@@ -667,7 +676,10 @@
           </div>
           <div class="d-flex align-items-center">
             <div class="px-2">
-              <img src="./images/content/map_section/car-svgrepo-com (1).svg" alt="car" />
+              <img
+                src="./images/content/map_section/car-svgrepo-com (1).svg"
+                alt="car"
+              />
             </div>
             <div class="">
               <p><b> By van</b></p>
@@ -705,7 +717,10 @@
             <img src="./images/content/wellness/bridge.jpeg" alt="bridge" />
           </div>
           <div class="wellness_img col-4">
-            <img src="./images/content/wellness/home_jungle.jpeg" alt="jungle" /><img
+            <img
+              src="./images/content/wellness/home_jungle.jpeg"
+              alt="jungle"
+            /><img
               src="./images/content/wellness/girl-jungle.jpeg"
               alt="homejungle"
             />
@@ -767,195 +782,198 @@
         src="./images/content/footer/Blue-Pattern-Background-For-Free-Download.jpg"
         alt="footer_bg"
       />
-    
 
-    <div
-      class=" container-fluid align-self-center text-center text-md-start text-light"
-    >
-      <div class="row d-flex justify-content-center footer-content">
-        <div class="footer-first col-10   col-md-2 pt-5">
-          <div class="py-2">
-            <h3>MIKALTO</h3>
-            <p>Hotel & Resorts</p>
-          </div>
-          <div class="py-1">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-              quibusdam eligendi ea culpa molestias molestiae esse reprehenderit
-              .
-            </p>
-          </div>
-          <div class="d-flex social_media m-auto">
-            <p class="fs-6"><b> Follow Us:</b></p>
-            <a href="https://www.facebook.com" target="_blank"
-              ><img
-                class="footer_social_media"
-                src="./images/content/footer/facebook-svgrepo-com.svg"
-                alt="Facebook"
-            /></a>
-            <a href="https://www.twitter.com" target="_blank"
-              ><img
-                class="footer_social_media"
-                src="./images/content/footer/twitter-bird-svgrepo-com.svg"
-                alt="Twitter"
-            /></a>
-            <a href="https://www.instagram.com" target="_blank"
-              ><img
-                class="footer_social_media"
-                src="./images/content/footer/instagram-outline-svgrepo-com.svg"
-                alt="Instagram"
-            /></a>
-            <a href="https://www.youtube.com" target="_blank"
-              ><img
-                class="footer_social_media"
-                src="./images/content/footer/youtube-svgrepo-com.svg"
-                alt="YouTube"
-            /></a>
-            <a href="https://www.pintrest.com" target="_blank"
-              ><img
-                class="footer_social_media"
-                src="./images/content/footer/pinterest-outline-svgrepo-com.svg"
-                alt="pintrest"
-            /></a>
-          </div>
-        </div>
-
-        <div class="footer-mid d-flex col-lg-4 col-md-5 p-2 row pt-1 pt-md-5">
-          <div class="col-md-6 col-12 offset-0">
-            <div class="py-1">
-              <h4>About</h4>
-            </div>
-            <div class="py-2">
-              <a class="text-decoration-none text-secondary" href="#"
-                >About Us</a
-              >
-            </div>
-            <div class="py-0 py-md-1">
-              <a class="text-decoration-none text-secondary" href="#"
-                >Careers</a
-              >
-            </div>
-            <div class="py-0 py-md-1">
-              <a class="text-decoration-none text-secondary" href="#"
-                >Contact Us</a
-              >
-            </div>
-            <div class="py-0 py-md-1">
-              <a class="text-decoration-none text-secondary" href="#">Blog</a>
-            </div>
-            <div class="py-0 py-md-1">
-              <a class="text-decoration-none text-secondary" href="#"
-                >Gift Card</a
-              >
-            </div>
-          </div>
-
-          <div class="col-md-6 col-12 offset-0 p-2">
-            <div class="py-2">
-              <h4>Services</h4>
-            </div>
-            <div class="py-0 py-md-1">
-              <a class="text-decoration-none text-secondary" href="#">Spa</a>
-            </div>
-            <div class="py-0 py-md-1">
-              <a class="text-decoration-none text-secondary" href="#"
-                >Experience</a
-              >
-            </div>
-            <div class="py-0 py-md-1">
-              <a class="text-decoration-none text-secondary" href="#"
-                >wedding</a
-              >
-            </div>
-            <div class="py-0 py-md-1">
-              <a class="text-decoration-none text-secondary" href="#">Dining</a>
-            </div>
-            <div class="py-0 py-md-1">
-              <a class="text-decoration-none text-secondary" href="#">Event</a>
-            </div>
-          </div>
-        </div>
-        <div class="footer-mid d-flex col-md-4 p-2 row pt-5">
-          <div class="col-md-6 col-12 offset-0">
-            <div class="py-2">
-              <h4>Quick Links</h4>
-            </div>
-            <div class="py-0 py-md-1">
-              <a class="text-decoration-none text-secondary" href="#"
-                >Facilities</a
-              >
-            </div>
-            <div class="py-0 py-md-1">
-              <a class="text-decoration-none text-secondary" href="#"
-                >Accomodation</a
-              >
-            </div>
-            <div class="py-0 py-md-1">
-              <a class="text-decoration-none text-secondary" href="#"
-                >Reservation</a
-              >
-            </div>
-            <div class="py-0 py-md-1">
-              <a class="text-decoration-none text-secondary" href="#">Blog</a>
-            </div>
-            <div class="py-0 py-md-1">
-              <a class="text-decoration-none text-secondary" href="#"
-                >Why Choose Us</a
-              >
-            </div>
-            <div class="py-0 py-md-1">
-              <a class="text-decoration-none text-secondary" href="#"
-                >Our Restaurant</a
-              >
-            </div>
-          </div>
-
-          <div class="col-md-6 col-12 p-2 align-items-center">
-            <div class="py-2">
-              <h4>Contact Us</h4>
-            </div>
-            <div class="py-0 py-md-1">
-              <a class="text-decoration-none text-secondary" href="#"
-                >Total Free Customer Support</a
-              >
-              <p>(+123)1500-450-9876</p>
-            </div>
-            <div class="py-0 py-md-1">
-              <a class="text-decoration-none text-secondary" href="#"
-                >Need Live support?</a
-              >
-              <p>reservation@mikalto.com</p>
-            </div>
-          </div>
-        </div>
-      </div>
       <div
-        class="d-flex justify-content-between border-top border-1 border-white mx-5"
+        class="container-fluid align-self-center text-center text-md-start text-light"
       >
-        <ul class="d-flex gap-3 p-0 list-unstyled">
-          <li>Copyright © 2022 Mikalto JWS.</li>
-          <li class="d-md-inline d-none">Privacy</li>
-          <li class="d-md-inline d-none">Terms</li>
-          <li class="d-md-inline d-none">Sitemap</li>
-        </ul>
-        <div>
-          <a href="#" target="_blank"
-            ><img
-              class="w-25 d-md-inline d-none"
-              src="./images/content/footer/globe-svgrepo-com.svg"
-              alt="globe"
-          /></a>
-          <select name="language" id="language" class="btn text-light avail">
-            <option value="english">EN</option>
-            <option value="french">HN</option>
-            <option value="spanish">SN</option>
-            <option value="russian">JP</option>
-            <option value="german">TM</option>
-          </select>
+        <div class="row d-flex justify-content-center footer-content">
+          <div class="footer-first col-10 col-md-2 pt-5">
+            <div class="py-2">
+              <h3>MIKALTO</h3>
+              <p>Hotel & Resorts</p>
+            </div>
+            <div class="py-1">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                quibusdam eligendi ea culpa molestias molestiae esse
+                reprehenderit .
+              </p>
+            </div>
+            <div class="d-flex social_media m-auto">
+              <p class="fs-6"><b> Follow Us:</b></p>
+              <a href="https://www.facebook.com" target="_blank"
+                ><img
+                  class="footer_social_media"
+                  src="./images/content/footer/facebook-svgrepo-com.svg"
+                  alt="Facebook"
+              /></a>
+              <a href="https://www.twitter.com" target="_blank"
+                ><img
+                  class="footer_social_media"
+                  src="./images/content/footer/twitter-bird-svgrepo-com.svg"
+                  alt="Twitter"
+              /></a>
+              <a href="https://www.instagram.com" target="_blank"
+                ><img
+                  class="footer_social_media"
+                  src="./images/content/footer/instagram-outline-svgrepo-com.svg"
+                  alt="Instagram"
+              /></a>
+              <a href="https://www.youtube.com" target="_blank"
+                ><img
+                  class="footer_social_media"
+                  src="./images/content/footer/youtube-svgrepo-com.svg"
+                  alt="YouTube"
+              /></a>
+              <a href="https://www.pintrest.com" target="_blank"
+                ><img
+                  class="footer_social_media"
+                  src="./images/content/footer/pinterest-outline-svgrepo-com.svg"
+                  alt="pintrest"
+              /></a>
+            </div>
+          </div>
+
+          <div class="footer-mid d-flex col-lg-4 col-md-5 p-2 row pt-1 pt-md-5">
+            <div class="col-md-6 col-12 offset-0">
+              <div class="py-1">
+                <h4>About</h4>
+              </div>
+              <div class="py-2">
+                <a class="text-decoration-none text-secondary" href="#"
+                  >About Us</a
+                >
+              </div>
+              <div class="py-0 py-md-1">
+                <a class="text-decoration-none text-secondary" href="#"
+                  >Careers</a
+                >
+              </div>
+              <div class="py-0 py-md-1">
+                <a class="text-decoration-none text-secondary" href="#"
+                  >Contact Us</a
+                >
+              </div>
+              <div class="py-0 py-md-1">
+                <a class="text-decoration-none text-secondary" href="#">Blog</a>
+              </div>
+              <div class="py-0 py-md-1">
+                <a class="text-decoration-none text-secondary" href="#"
+                  >Gift Card</a
+                >
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12 offset-0 p-2">
+              <div class="py-2">
+                <h4>Services</h4>
+              </div>
+              <div class="py-0 py-md-1">
+                <a class="text-decoration-none text-secondary" href="#">Spa</a>
+              </div>
+              <div class="py-0 py-md-1">
+                <a class="text-decoration-none text-secondary" href="#"
+                  >Experience</a
+                >
+              </div>
+              <div class="py-0 py-md-1">
+                <a class="text-decoration-none text-secondary" href="#"
+                  >wedding</a
+                >
+              </div>
+              <div class="py-0 py-md-1">
+                <a class="text-decoration-none text-secondary" href="#"
+                  >Dining</a
+                >
+              </div>
+              <div class="py-0 py-md-1">
+                <a class="text-decoration-none text-secondary" href="#"
+                  >Event</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="footer-mid d-flex col-md-4 p-2 row pt-5">
+            <div class="col-md-6 col-12 offset-0">
+              <div class="py-2">
+                <h4>Quick Links</h4>
+              </div>
+              <div class="py-0 py-md-1">
+                <a class="text-decoration-none text-secondary" href="#"
+                  >Facilities</a
+                >
+              </div>
+              <div class="py-0 py-md-1">
+                <a class="text-decoration-none text-secondary" href="#"
+                  >Accomodation</a
+                >
+              </div>
+              <div class="py-0 py-md-1">
+                <a class="text-decoration-none text-secondary" href="#"
+                  >Reservation</a
+                >
+              </div>
+              <div class="py-0 py-md-1">
+                <a class="text-decoration-none text-secondary" href="#">Blog</a>
+              </div>
+              <div class="py-0 py-md-1">
+                <a class="text-decoration-none text-secondary" href="#"
+                  >Why Choose Us</a
+                >
+              </div>
+              <div class="py-0 py-md-1">
+                <a class="text-decoration-none text-secondary" href="#"
+                  >Our Restaurant</a
+                >
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12 p-2 align-items-center">
+              <div class="py-2">
+                <h4>Contact Us</h4>
+              </div>
+              <div class="py-0 py-md-1">
+                <a class="text-decoration-none text-secondary" href="#"
+                  >Total Free Customer Support</a
+                >
+                <p>(+123)1500-450-9876</p>
+              </div>
+              <div class="py-0 py-md-1">
+                <a class="text-decoration-none text-secondary" href="#"
+                  >Need Live support?</a
+                >
+                <p>reservation@mikalto.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex justify-content-between border-top border-1 border-white mx-5"
+        >
+          <ul class="d-flex gap-3 p-0 list-unstyled">
+            <li>Copyright © 2022 Mikalto JWS.</li>
+            <li class="d-md-inline d-none">Privacy</li>
+            <li class="d-md-inline d-none">Terms</li>
+            <li class="d-md-inline d-none">Sitemap</li>
+          </ul>
+          <div>
+            <a href="#" target="_blank"
+              ><img
+                class="w-25 d-md-inline d-none"
+                src="./images/content/footer/globe-svgrepo-com.svg"
+                alt="globe"
+            /></a>
+            <select name="language" id="language" class="btn text-light avail">
+              <option value="english">EN</option>
+              <option value="french">HN</option>
+              <option value="spanish">SN</option>
+              <option value="russian">JP</option>
+              <option value="german">TM</option>
+            </select>
+          </div>
         </div>
       </div>
-    </div></section>
+    </section>
     <!-- <script src="./script/main.js"></script> -->
-    
   </body>
 </html>

@@ -1,17 +1,15 @@
 import '../scss/app.scss';
 import 'bootstrap/scss/bootstrap.scss';
 
-/* Your JS Code goes here */
-
-/* Demo JS */
-// import './demo.js';
+let response =""
 
 async function data() {
-     await fetch(`http://localhost:8080/`)
+   await fetch(`http://localhost:8002/`)
       .then((res) => {
         return res.json();
       }).then((res)=>{
-        console.log(res[0].hero.slide1.one);
+        response=res
+        console.log(res);
       console.log(res[0].hero.slide2.two);
       document.getElementById(
         "landing_page"
@@ -22,23 +20,12 @@ async function data() {
       .catch((err) => {
         alert(err);
       });
-  
-    // if (!res.error) {
-    //   console.log(res[0].hero.slide1.one);
-    //   console.log(res[0].hero.slide2.two);
-    //   document.getElementById(
-    //     "landing_page"
-    //   ).style.backgroundImage = `url(${res[0].hero.image})`;
-    //   document.getElementById("one").src = res[0].hero.slide1.image;
-    //   document.getElementById("two").src = res[0].hero.slide2.image;
-    // } else {
-    //   console(res.error.message);
-    // }
+      console.log(response);
   }
   
   data();
   
-  function handleForm(event) {
+  document.getElementById("submitDetails").addEventListener("click", () => {
     event.preventDefault();
     let formData = {
       checkIn: document.getElementById("checkIn").value,
@@ -47,7 +34,7 @@ async function data() {
       childrens: document.getElementById("children").value,
     };
     console.log(formData);
-    fetch("http://localhost:8080/", {
+    fetch("http://localhost:8002/", {
       method: "POST",
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -57,10 +44,10 @@ async function data() {
       alert("Form submitted!");
       document.getElementById("checkIn").value = null;
       document.getElementById("checkOut").value = null;
-      document.getElementById("adults").value = "0";
+      document.getElementById("adult").value = "0";
       document.getElementById("childrens").value = "0";
     });
-  }
+  });
   
   let swiper = new Swiper(".mySwiper", {
     navigation: {
@@ -68,19 +55,19 @@ async function data() {
       prevEl: ".swiper-button-prev",
     },
   });
-
   document.getElementById("next").addEventListener("click", () => {
+  console.log(response,"res");
     console.log(swiper.activeIndex);
     if (swiper.activeIndex === 0) {
       document.getElementById(
         "roomType"
-      ).innerHTML = `${res[0].hero.slide1.roomType}`;
-      document.getElementById("price").innerHTML = `${res[0].hero.slide1.price}`;
+      ).innerHTML = `${response[0].hero.slide1.roomType}`;
+      document.getElementById("price").innerHTML = `${response[0].hero.slide1.price}`;
     } else if (swiper.activeIndex === 1) {
       document.getElementById(
         "roomType"
-      ).innerHTML = `${res[0].hero.slide2.roomType}`;
-      document.getElementById("price").innerHTML = `${res[0].hero.slide2.price}`;}
+      ).innerHTML = `${response[0].hero.slide2.roomType}`;
+      document.getElementById("price").innerHTML = `${response[0].hero.slide2.price}`;}
   });
   
   document.getElementById("prev").addEventListener("click", () => {
@@ -88,13 +75,13 @@ async function data() {
     if (swiper.activeIndex === 0) {
       document.getElementById(
         "roomType"
-      ).innerHTML = `${res[0].hero.slide1.roomType}`;
-      document.getElementById("price").innerHTML = `${res[0].hero.slide1.price}`;
+      ).innerHTML = `${response[0].hero.slide1.roomType}`;
+      document.getElementById("price").innerHTML = `${response[0].hero.slide1.price}`;
     } else if (swiper.activeIndex === 1) {
       document.getElementById(
         "roomType"
-      ).innerHTML = `${res[0].hero.slide2.roomType}`;
-      document.getElementById("price").innerHTML = `${res[0].hero.slide2.price}`;
+      ).innerHTML = `${response[0].hero.slide2.roomType}`;
+      document.getElementById("price").innerHTML = `${response[0].hero.slide2.price}`;
     } 
   });
   
